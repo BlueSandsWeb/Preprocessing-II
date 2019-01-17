@@ -11,18 +11,35 @@
         padding: 23px 0;
         .cust-flex(row, space-between, center);
         width: 100%;
+        @media @phone {
+            flex-direction: column;  
+            padding: 18px 0 9px 0; 
+        }
         h1 {
             padding-top: 1px;
             padding-bottom: 1px;
+            @media @phone {
+                font-size: 3rem;
+                padding: 0;
+                margin-bottom: 15px;
+            }
         }
         .nav-links {
             a {
-            color: black;
-            text-decoration: none;
-            font-size: 1.6rem;
-            margin-right: 29px;
+                color: black;
+                text-decoration: none;
+                font-size: 1.6rem;
+                margin-right: 29px;
+                @media @phone {
+                    margin: 0px;
+                }
+            }
+            @media @phone {
+                width: 100%;
+                .cust-flex(row, space-evenly, center);
             }
         }
     }
+
 
 }

@@ -16,14 +16,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-    @media @phone {
+    @media @mobile {
       flex-direction: column;
     }
    
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media @phone {
+      @media @mobile {
         width: 100%;
       }
     }
@@ -32,14 +32,14 @@
       width: 48%;
       padding-left: 1%;
 
-      @media @phone {
+      @media @mobile {
         width: 100%;
         padding-left: 0;
       }
 
       img {
         border-radius: 10px;
-        @media @phone {
+        @media @mobile {
           width: 100%;
         }
       }
@@ -49,7 +49,7 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media @phone {
+    @media @mobile {
       flex-direction: column-reverse;
     }
     .text-content {
@@ -67,7 +67,7 @@
     width: 75%;
     margin: 0 auto 30px;
     
-    @media @phone {
+    @media @mobile {
       width: 100%;
     }
 
@@ -82,7 +82,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media @phone {
+    @media @Mobile {
       flex-direction: column;
       align-items: center;
     }
@@ -90,12 +90,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media @phone {
+      @media @Mobile {
         width: 80%;
       }
       .btn {
         .btn(45px, 83%, #008281, white);
-        @media @phone {
+        @media @Mobile {
           .btn(45px, 100%, #009fba, white);
         }
       }

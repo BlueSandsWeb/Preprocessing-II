@@ -1,7 +1,4 @@
 // Navigation Styles here
-* {
-    // border: 1px solid red !important;
-}
 .nav {
     border-bottom: 2px dashed @navigation-border;
     .container {
@@ -11,14 +8,14 @@
         padding: 23px 0;
         .cust-flex(row, space-between, center);
         width: 100%;
-        @media @Mobile {
+        @media @mobile {
             flex-direction: column;  
             padding: 18px 0 9px 0; 
         }
         h1 {
             padding-top: 1px;
             padding-bottom: 1px;
-            @media @Mobile {
+            @media @mobile {
                 font-size: 3rem;
                 padding: 0;
                 margin-bottom: 15px;
@@ -30,11 +27,11 @@
                 text-decoration: none;
                 font-size: 1.6rem;
                 margin-right: 29px;
-                @media @Mobile {
+                @media @mobile {
                     margin: 0px;
                 }
             }
-            @media @Mobile {
+            @media @mobile {
                 width: 100%;
                 .cust-flex(row, space-evenly, center);
             }

@@ -1,1 +1,24 @@
 // Mixins in here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cust-flex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn(@height, @width, @background, @color){
+    height: @height;
+    width: @width;
+    background-color: @background;
+    color: @color;
+    .center;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
